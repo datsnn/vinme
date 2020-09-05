@@ -18,7 +18,22 @@
       <div class="fourteen wide column">
         <div class="ui raised segment header centered semi top">
           <div>
-            <b>თქვენი რეკლამის ადგილი</b> <br /> {{ noOfUsers }} online
+            
+            
+            <?php
+   MOVx ADS Local Mode Tag - Generated with MOVx ADS v5.0.5 
+  define('MAX_PATH', '/usr/www/users/lukate/adserver');
+  if (@include_once(MAX_PATH . '/www/delivery/alocal.php')) {
+    if (!isset($phpAds_context)) {
+      $phpAds_context = array();
+    }
+    $phpAds_raw = view_local('', 2, 0, 0, '', '', '0', $phpAds_context, '');
+  }
+  echo $phpAds_raw['html'];
+?>
+
+            
+            
           </div>
         </div>
         <div class="ui vertical grid" id="msgs">
