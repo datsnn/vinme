@@ -24,6 +24,7 @@ app.get('/', (req, res) => {
     noOfUsers = noOfUsers + " user";
   }
   res.render('index', { noOfUsers: noOfUsers });
+  res.render('chat', { noOfUsers: noOfUsers });
 });
 
 app.get('/chat', (req, res) => {
