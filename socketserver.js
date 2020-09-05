@@ -10,7 +10,7 @@ require('./globals.js');
 module.exports = (io, app) => {
   io.on('connection', (socket) => {
     let windowID = socket;
-    socket.emit('wait', { "message": "Please wait...connecting you to stranger!"});
+    socket.emit('wait', { "message": "ველოდებით, მოსაუბრეს.."});
     //push the user to avilable users list
       availableUsers.push(socket);
       let resolveAfter5Seconds = () => {
@@ -55,7 +55,7 @@ module.exports = (io, app) => {
                 unfilledRooms[0].isFilled = true;
                 socket.emit('private ack', { "message": "Added to privateRoom", "roomID": unfilledRooms[0].roomID });
                 socket.roomID = unfilledRooms[0].roomID;
-                io.sockets.in(socket.roomID).emit('toast', { "message": "You are connected with a stranger!"});
+                io.sockets.in(socket.roomID).emit('toast', { "message": "მოსაუბრე ნაპოვნია!"});
               }
               catch(e) {
                 // dont have unfilled rooms. Thus creating a new user.
@@ -85,7 +85,7 @@ module.exports = (io, app) => {
       index = rooms.findIndex(x => x.roomID == windowID.roomID);
       if(index >= 0){
         if(rooms[index].isFilled == true){
-          let warning = { "title": "Stranger is disconnected!", "message": "Please click on 'New' button to connect to someone else." };
+          let warning = { "title": "Stranger is disconnected!", "message": "დააჭირეთ 'ახალი მოსაუბრე' რომ დაუკავშირდეთ სხვას.." };
           io.sockets.in(windowID.roomID).emit('alone', { "warning": warning, "roomID": windowID.roomID });
           rooms.splice(index,1);
         }
