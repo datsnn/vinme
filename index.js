@@ -24,6 +24,16 @@ app.get('/', (req, res) => {
     noOfUsers = noOfUsers + " user";
   }
   res.render('index', { noOfUsers: noOfUsers });
+});
+
+app.get('/chat', (req, res) => {
+  let noOfUsers = onlineUsers.length;
+  if (noOfUsers > 1) {
+    noOfUsers = noOfUsers + " users";
+  }
+  else {
+    noOfUsers = noOfUsers + " მოსაუბრეა";
+  }
   res.render('chat', { noOfUsers: noOfUsers });
 });
 
