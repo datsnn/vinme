@@ -1,6 +1,6 @@
-# Omeclone
+# Vinme
 
-Omeclone is a platform where you can chat with strangers, make new friends. It's fun to chat with stranger. We took inspiration from omegle.com and tried to build this.
+VINME is a platform where you can chat with strangers, make new friends. It's fun to chat with stranger. We took inspiration from omegle.com and tried to build this.
 
 ## Screenshots
 
@@ -21,7 +21,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd Omeclone`
+* `cd vinme`
 * `npm install` - This will install all the npm packages that are needed.
 * `bower install` - This will install all the frontend dependencies.
 
@@ -36,8 +36,7 @@ You will need the following things properly installed on your computer.
 
 ## Join the development:
 
-* Read [CONTRIBUTING.md](https://github.com/wdlsvnit/Omeclone/blob/master/CONTRIBUTING.md).
+* Read [CONTRIBUTING.md](https://github.com/datsnn/vinme/blob/master/CONTRIBUTING.md).
 * Before you start contributing, run the app in tour local machine, get familiar with it and then check for bugs or more features.
 * For any bug or for adding an feature you may open an issue.
 * If you would like to work on an issue, drop in a comment at the issue.
-* If you have any queries, you can ask on our channel [here](https://t.me/joinchat/DHpmLBJ5imadY_sbMfeW6w).
