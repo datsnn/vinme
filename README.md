@@ -4,11 +4,11 @@ VINME is a platform where you can chat with strangers, make new friends. It's fu
 
 ## Screenshots
 
-![index page](./screenshots/index.png)
+![index page](./screenshots/index.PNG)
 
-![chat_connecting](./screenshots/chat_connecting.png)
+![chat_connecting](./screenshots/chat_connecting.PNG)
 
-![chat_connected](./screenshots/chat_connected.png)
+![chat_connected](./screenshots/chat_connected.PNG)
 
 ## Prerequisites
 
